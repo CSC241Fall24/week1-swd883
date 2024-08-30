@@ -5,6 +5,8 @@ public class Bulbasaur {
     // Constructor
     public Bulbasaur() {
         // TODO: Initialize id and level with appropriate values
+        id = 1;
+        level = 1;
     }
 
     // setLevel method
@@ -13,25 +15,42 @@ public class Bulbasaur {
         // Update the level
         // If the new level is 16 or higher but less than 32, evolve to Ivysaur
         // If the new level is 32 or higher, evolve to Venusaur
+        this.level = lv;
+        if (level >= 16 && level <=31){
+            id = 2;
+        }
+        if (level >= 31){
+            id = 3;
+        }
     }
 
     // getLevel method
     public int getLevel() {
         // TODO: Implement this method
-        return 0; // Placeholder return value
+        return this.level; // Placeholder return value
     }
 
     // getName method
     public String getName() {
         // TODO: Implement this method
         // Return the name based on the current id
-        return ""; // Placeholder return value
+        if(id == 1){
+            return "Bulbasaur";
+        }
+        if(id == 2){
+            return "Ivysaur";
+        }
+        if(id ==2){
+            return "Venasaur";
+        }
+
+        return "Invalid ID"; // Placeholder return value
     }
 
     // getID method
     public int getID() {
         // TODO: Implement this method
-        return 0; // Placeholder return value
+        return this.id; // Placeholder return value
     }
 
     // toString method
