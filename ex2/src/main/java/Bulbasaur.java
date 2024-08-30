@@ -40,7 +40,7 @@ public class Bulbasaur {
         if(id == 2){
             return "Ivysaur";
         }
-        if(id ==2){
+        if(id ==3){
             return "Venasaur";
         }
 
